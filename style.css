@@ -1,0 +1,792 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: 'Monda', sans-serif;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    color: #000000;
+    font-family: 'Monda', sans-serif;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e0e0e0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.accent-white {
+    color: #e0e0e0;
+}
+
+.accent-purple {
+    color: #9913e1;
+}
+
+.bold {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+input[type=text],
+textarea {
+    background: transparent;
+    border: 3px solid #e0e0e0;
+    border-radius: 25px;
+    color: #e0e0e0;
+    font-family: 'Monda', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 10px 22px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+textarea {
+    height: 220px;
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #e0e0e0;
+    opacity: 1;
+}
+
+input[type=submit] {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 25px;
+    color: #9913e1;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 111%;
+}
+
+.link-button,
+.link-button-white {
+    background-color: transparent;
+    border: 4px solid #831adc;
+    border-radius: 33px;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 9px 67px;
+    text-transform: uppercase;
+}
+
+.link-button {
+    color: #831adc;
+}
+
+.link-button-white {
+    border-color: #e0e0e0;
+    color: #e0e0e0;
+}
+
+header {
+    display: flex;
+    position: absolute;
+    width: 100%;
+}
+
+.header-container {
+    align-items: center;
+    display: flex;
+    gap: 24%;
+    padding-top: 90px;
+    padding-left: 203px;
+    padding-right: 85px;
+}
+
+.header-logo {
+    height: 75px;
+}
+
+.header-logo img {
+    height: 100%;
+}
+
+nav a {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+nav .active {
+    color: #831adc;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 46px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+}
+
+h2,
+h2 span,
+.singer-name,
+.singer-name span {
+    font-family: 'Staatliches', cursive;
+    font-size: 96px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero {
+    display: flex;
+    background: transparent url("img/hero-bg.png") no-repeat top left;
+    background-size: 1200px;
+    background-position: -300px -300px;
+    height: 819px;
+}
+
+.hero h1 {
+    display: none;
+}
+
+.hero p {
+    text-align: center;
+}
+
+.hero-image {
+    height: 100%;
+    width: 26%;
+}
+
+.hero-image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.hero-text-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 243px;
+    width: 36%;
+}
+
+.title-image {
+    max-width: 283px;
+    width: 60vw;
+}
+
+.title-image img {
+    width: 100%;
+}
+
+.slogan {
+    transform: rotateZ(-5deg);
+}
+
+.slogan div {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.slogan div:first-child {
+    background-color: #000000;
+    transform: rotateZ(1deg);
+}
+
+.slogan div:last-child {
+    background-color: #831adc;
+    margin-left: 132px;
+    margin-top: 10px;
+    transform: rotateZ(2deg);
+}
+
+.arrow {
+    background: none;
+    border: none;
+}
+
+.sub-hero {
+    background: #9913e1 url("img/stroke.png") no-repeat left bottom;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.sub-hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    width: 29%;
+}
+
+.sub-hero-content .link-button-white {
+    padding: 13px 55px;
+    width: 120px;
+}
+
+.sub-hero-title {
+    width: 34%;
+}
+
+.reserve-ticket-top-images {
+    display: flex;
+    height: 250px;
+}
+
+.reserve-ticket-top-images div {
+    height: 100%;
+}
+
+.reserve-ticket-top-image:first-child {
+    width: 35%;
+}
+
+.reserve-ticket-top-image:last-child {
+    width: 65%;
+}
+
+.reserve-ticket-top-image img,
+.reserve-ticket-image img,
+.reserve-tickets-image img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+}
+
+.reserve-tickets-title {
+    background: transparent url("img/reserve-title-bg.png") no-repeat center center;
+    background-position: bottom center;
+    background-size: 70%;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.reserve-tickets {
+    background: transparent url("img/reserve-tickets-bg.png") no-repeat center center;
+    background-position: top right;
+    background-size: 20%;
+    display: flex;
+    gap: 75px;
+    height: 840px;
+    position: relative;
+}
+
+.reserve-ticket-image {
+    width: 35%;
+}
+
+.reserve-ticket-text-content {
+    padding-top: 145px;
+    width: 55%;
+}
+
+.reserve-tickets-text-columns {
+    gap: 15px
+}
+
+.reserve-tickets-text-columns,
+.reserve-tickets-text-column {
+    display: flex;
+}
+
+.reserve-tickets-text-column {
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-between;
+}
+
+.reserve-tickets-images {
+    bottom: 50px;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: 0;
+}
+
+.reserve-tickets-image:last-child {
+    width: 300px;
+}
+
+.reserve-tickets-image {
+    height: 225px;
+    width: 402px;
+}
+
+#newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 395px;
+}
+
+#newsletter-form input[type=submit] {
+    margin-top: 25px;
+}
+
+#newsletter {
+    background: #9913e1 url("img/Paper_Tear.png") no-repeat left bottom;
+    display: flex;
+}
+
+.newsletter-text-content {
+    padding: 127px 138px;
+}
+
+#singers {
+    align-items: center;
+    background: #e0e0e0 url("img/stroke-2-sides.png") no-repeat center center;
+    background-size: 165%;
+    background-position-y: 25%;
+    display: flex;
+    justify-content: center;
+    height: 572px;
+}
+
+.singer-details {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    max-width: 33%;
+    padding-left: 121px;
+    padding-right: 121px;
+    text-align: center;
+}
+
+.newsletter-img img {
+    object-fit: cover;
+}
+
+footer {
+    height: 460px;
+}
+
+footer .link-button {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+footer .link-button img {
+    height: 15px;
+}
+
+.footer-logo img {
+    height: 120px;
+}
+
+.footer-container {
+    background: #e0e0e0 url("img/footer.png") no-repeat center center;
+    background-position: 11% -6%;
+    display: flex;
+    font-size: 23px;
+    height: 100%;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1200px;
+    padding: 120px;
+    width: calc(100%- 240px);
+}
+
+.footer-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-column-name {
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 1200px) {
+    input[type="text"],
+    textarea,
+    input[type="submit"],
+    p,
+    .slogan div {
+        font-size: 16px;
+    }
+    .sub-hero-content .link-button-white {
+        padding: 13px 31px;
+        width: 103px;
+    }
+    .link-button,
+    .link-button-white {
+        font-size: 15px;
+        padding: 8px 30px;
+    }
+    .hero {
+        background-size: 950px;
+        background-position: -291px -206px;
+        height: unset;
+    }
+    .hero-text-content {
+        padding-left: 27px;
+        padding-right: 27px;
+        padding-bottom: 50px;
+        width: 60vw;
+    }
+    .hero-image {
+        height: 80vw;
+        width: 40vw;
+    }
+    h2,
+    h2 span,
+    .singer-name,
+    .singer-name span {
+        font-size: 72px;
+    }
+    .sub-hero {
+        background-size: 190px;
+        padding: 50px 27px;
+    }
+    .sub-hero-content {
+        width: 52%;
+    }
+    .sub-hero-title {
+        width: 50%;
+    }
+    .reserve-tickets-text-column {
+        height: unset;
+    }
+    .link-wrap {
+        margin-top: 50px;
+    }
+    .arrow img {
+        width: 70px;
+    }
+    .singer-details {
+        max-width: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .newsletter-img img {
+        height: 100%;
+        width: 100%;
+    }
+    footer {
+        height: unset;
+    }
+    .footer-container {
+        background-position-y: 29%;
+        padding: 50px 27px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .hero {
+        background-image: none;
+    }
+    .header-container {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-top: 30px;
+    }
+    .hero-text-content {
+        padding-top: 180px;
+    }
+    .reserve-ticket-image,
+    .newsletter-img {
+        display: none;
+    }
+    .reserve-ticket-text-content {
+        padding: 50px 27px;
+        width: unset;
+    }
+    .reserve-tickets {
+        height: 600px;
+    }
+    .reserve-tickets-images {
+        position: static;
+    }
+    .reserve-tickets {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: max-content;
+    }
+    .link-wrap {
+        margin-top: 30px;
+    }
+    .reserve-tickets-image,
+    .reserve-tickets-image:last-child {
+        justify-content: center;
+        width: 33.3%;
+    }
+    .reserve-tickets-text-columns {
+        gap: 50px;
+    }
+    #singers {
+        background-position-y: -40px;
+        background-size: 160vw;
+    }
+    .newsletter-text-content {
+        padding: 50px 27px;
+    }
+    #newsletter-form,
+    .newsletter-text-content {
+        width: calc(100% - 54px);
+    }
+    #newsletter-form {
+        padding-top: 20px;
+    }
+    #newsletter-form input[type="submit"] {
+        width: calc(100% + 54px);
+    }
+    #newsletter {
+        background-size: 50px;
+    }
+    .footer-logo img {
+        height: 80px;
+    }
+    .footer-container {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .header-logo img {
+        height: 70px;
+    }
+    .hero-image {
+        display: none;
+    }
+    .footer-container {
+        background-image: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    header nav a {
+        font-size: 20px;
+    }
+    header nav .active {
+        font-size: 21px;
+    }
+    header nav ul {
+        gap: 15px;
+    }
+    .slogan div {
+        font-size: 14px;
+    }
+    .slogan div:last-child {
+        margin-left: 40px;
+    }
+    .sub-hero {
+        background-image: none;
+        flex-direction: column;
+    }
+    .sub-hero-title,
+    .sub-hero-content {
+        width: 100%;
+    }
+    h2,
+    h2 span,
+    .singer-name,
+    .singer-name span {
+        font-size: 54px;
+    }
+    #singers {
+        height: unset;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .arrow img {
+        width: 50px;
+    }
+    .footer-container {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .footer-container ul {
+        margin-bottom: 30px;
+        width: 45%;
+    }
+    .footer-logo {
+        padding-bottom: 30px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header nav a {
+        font-size: 16px;
+    }
+    header nav .active {
+        font-size: 18px;
+    }
+    .reserve-tickets-text-columns {
+        flex-direction: column;
+    }
+    .slogan div {
+        font-size: 11px;
+    }
+}
